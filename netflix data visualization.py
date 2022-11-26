@@ -1,9 +1,5 @@
 
 import os
-for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
-# Importing libs
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,7 +10,7 @@ import plotly as py
 py.offline.init_notebook_mode(connected = True)
 plt.rcParams['figure.dpi'] = 140
 
-df = pd.read_csv('/kaggle/input/netflix-shows/netflix_titles.csv')
+df = pd.read_csv('Users/wyl/desktop/netflix_data.csv')
 
 df.head(3)
 
